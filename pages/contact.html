@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Adobe Creative Suite, Graphic Design, Multimedia, Web">
+	<meta name="description" content="I'm a senior designer that codes based in Mexico.">
+	<title>Contact | My Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<!-- Logo y navegación -->   
+        <nav class="container__nav">   
+            <div class="header">
+                <div class="header__nav">
+						<div class="header__logo">
+							<a href="../index.html" class="txt-logo"><span class="txt-logo__purple">P</span>W<span class="txt-logo__purple">D</span></a>
+						</div>
+					<div class="header__menu">
+						<ul>
+							<li><a href="../pages/about.html">About me</a></li>
+							<li><a href="../pages/social-media.html">Social Media</a></li>
+							<li><a href="../pages/video.html">Video</a></li>
+							<li><a href="../pages/print.html">Print</a></li>
+							<li><a href="../pages/contact.html">Contact me</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            </div>
+        </nav>  
+      	<!-- Información print -->
+		  <section class="light__description">
+			<div class="information">
+				<h3 class="information__title">Get in touch</h3>
+				<p class="information__txt text-start">As a freelancer, i'm available for new projects and collaborations.</p>
+				<div class="container-form">
+					<form name="formulario" method="post" action="../php/enviar.php" >
+						<p class="contacto-txt">Your name: </p>
+						<p class="contacto-txt"><input type="text" name="name" id="name" class="contacto-txt" placeholder="Your name"/></p>
+						<p class="contacto-txt">Email address: </p>
+						<p class="contacto-txt"><input type="text" name="mail"  id="mail"  class="contacto-txt" placeholder="youremail@email.com"/></p>
+						<p class="contacto-txt">Phone: </p>
+						<p class="contacto-txt"><input type="text" name="phone"  id="phone"  class="contacto-txt" placeholder="5555555555"/></p>
+					
+						<p class="contacto-txt">Type your message here:</p>
+						<p class="contacto-txt"><textarea name="message" id="message" placeholder="message"  class="contacto-txt" cols="40" rows="5"></textarea> </p>
+						<input type="submit"  class="contacto-txt" value="SEND" /> 
+					   </form>
+				</div>
+				</div>
+		</section>
+
+      	<!-- footer --> 
+      <footer>
+		<div class="footer">
+			<div class="footer__container">
+				<div class="footer__txt">Contact me</div>
+				<div class="footer__contact">
+					<div class="footer__img">
+						<a href="mailto:paolags@gmail.com"><img src="../images/mail.svg" alt=""></a>
+					  </div>
+					  <div class="footer__img">
+						<a href="https://www.linkedin.com/in/paolaguerrero/" target="_blank"><img src="../images/linkedin.svg" alt=""></a>
+					  </div>
+					  <div class="footer__img">
+						<a href="https://wa.me/5514750175?text=Hi!" target="_blank"><img src="../images/phone.svg" alt=""></a>
+					  </div>
+				</div>
+			</div>
+		</div>
+      </footer>
+    
+</body>
+
+</html>

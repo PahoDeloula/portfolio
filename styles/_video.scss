@@ -1,0 +1,110 @@
+.video-box {
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    margin: 10px;
+    padding: 20px;
+}
+.video video {
+    width: 100%;
+    height:auto;
+}
+.vid {
+    max-width: 980px;
+    &__title {
+        font-family: $font-global;
+        font-size: 3rem;
+        line-height: 6rem;
+        font-weight:700;
+        text-align: center;
+        color: $color-background;
+    }
+    &__txt {
+        font: {
+            family: $font-global;
+            size: 1.3rem;
+            weight:400;
+        }
+        text-align: center;
+        color: $color-lightgreen;
+        line-height: 2rem;
+        margin-bottom: 30px;
+    }
+}
+.purple-bg {
+    background-color: $color-gris-purple;
+}
+
+////////// Media Queries   
+@media only screen and (max-width: 769px) {
+    .video-box {
+        width: 100%;
+        max-width: 720px;
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+    }
+    .video video {
+        width: 100%;
+        height:auto;
+    }
+    .vid {
+        max-width: 720px;
+        &__title {
+            font-family: $font-global;
+            font-size: 3rem;
+            line-height: 6rem;
+            font-weight:700;
+            text-align: center;
+            color: $color-background;
+        }
+        &__txt {
+            font: {
+                family: $font-global;
+                size: 1.3rem;
+                weight:400;
+            }
+            text-align: center;
+            color: $color-lightgreen;
+            line-height: 2rem;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+////////// Media Queries   
+@media only screen and (max-width: 425px) {
+    .video-box {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 10px;
+        padding: 20px;
+    }
+    .video video {
+        width: 100%;
+        height:auto;
+    }
+    .vid {
+        max-width: 320px;
+        &__title {
+            font-family: $font-global;
+            font-size: 2rem;
+            line-height: 3rem;
+            font-weight:700;
+            text-align: center;
+            color: $color-background;
+        }
+        &__txt {
+            font: {
+                family: $font-global;
+                size: 1rem;
+                weight:400;
+            }
+            text-align: center;
+            color: $color-lightgreen;
+            line-height: 1.5rem;
+            margin-bottom: 30px;
+        }
+    }
+}

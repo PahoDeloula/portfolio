@@ -1,0 +1,310 @@
+ //intro
+    .intro {
+        &__title {
+            font-family: $font-global;
+            font-size: 3.5rem;
+            font-weight:700;
+            text-align: center;
+            color: $color-gris-claro;
+            padding: 50px 20px 20px 20px;
+        }
+        &__txt {
+            font-family: $font-global;
+            font-size: 2rem;
+            font-weight:400;
+            text-align: center;
+            color: $color-purpura-claro;
+            padding-bottom: 30px;
+        }
+        &__content {
+            display: flex;
+            justify-items: center;
+        }
+    }
+   
+    a.intro__btn {
+                text-align: center;
+                margin: 0 auto;
+                background: linear-gradient($color-background, $color-lightgreen);
+                border: 2px solid $color-purpura-claro;
+                color: $color-purpura-claro;
+                font-family: $font-links;
+                font-size: 1.2rem;
+                padding: 15px 25px;
+                transition: all .7s;
+                &:hover {
+                    text-align: center;
+                    padding: 15px 50px;
+                    background: linear-gradient($color-lightgreen, $color-background);
+                    border: 2px solid $color-purpura-medio;
+                    color: $color-purpura-medio;
+                    font-family: $font-links;
+                    font-size: 1.2rem;
+                }
+            }
+    .bg {
+        background-color: $color-gris-claro;
+    }
+    .light__description {
+        background-color: $color-gris-claro;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 30px 0px;
+    }
+    .information {
+        max-width: 740px;
+        &__title {
+            font-family: $font-global;
+            font-size: 2.5rem;
+            line-height: 6rem;
+            font-weight:700;
+            text-align: center;
+            color: $color-background;
+        }
+        &__subtitle {
+            font: {
+                family: $font-global;
+                size: 1.8rem;
+                weight:700;
+            }
+            text-align: center;
+            line-height: 8rem;
+            color: $color-background;
+            margin: 20px 0;
+        }
+        &__txt {
+            font: {
+                family: $font-global;
+                size: 1.3rem;
+                weight:400;
+            }
+            text-align: center;
+            color: $color-lightgreen;
+            line-height: 2rem;
+            margin-bottom: 30px;
+        }
+    }
+    .contacto-txt {
+        font: {
+            family: $font-global;
+            size: 1rem;
+            weight:400;
+        }
+        text-align: left;
+        color: $color-lightgreen;
+        line-height: 2rem;
+    }
+    .container-all{
+        width: fit-content;
+        width: fit-content;
+        margin: 20px auto;
+        height: auto;
+        background-color: $color-gris-claro;
+      }
+      .container{
+        width: calc(33% - 6px);
+        overflow:hidden;
+        height: fit-content;
+        margin:3px;
+        padding: 0;
+        display:block;
+        position:relative;
+        float:left;
+        background-color: $color-gris-claro;
+      }
+      img{
+        width: 100%;
+        transition-duration: .3s;
+        max-width: 100%;
+        display:block;
+        overflow:hidden;
+        cursor:pointer;
+      }
+      .title{
+        position:absolute;
+        display:block;
+        cursor:pointer;
+        top: 50%;
+        display: none;
+        left: 50%;
+        margin-right: -50%;
+        font-family: $font-global;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-shadow: 1px 5px 10px $color-background;
+        transition-duration: .3s;
+      }
+      .container:hover img{
+        transform: scale(1.2);
+        transition-duration: .3s;
+        filter: grayscale(50%);
+        opacity: .7;
+      }
+      .container:hover span{
+        color:white;
+        display: block;
+        transition-duration: .3s;
+      }
+      @media only screen and (max-width: 900px) {
+          .container {
+              width: calc(50% - 6px);
+          }
+      }
+      @media only screen and (max-width: 400px) {
+          .container {
+              width: 100%;
+          }
+      }
+
+
+////////// Media Queries   
+
+@media only screen and (max-width: 425px) {
+    .intro {
+        &__title {
+            font-family: $font-global;
+            font-size: 3rem;
+            font-weight:700;
+            text-align: center;
+            color: $color-gris-claro;
+            padding: 80px 20px 20px 20px;
+        }
+        &__txt {
+            font-family: $font-global;
+            font-size: 1.5rem;
+            font-weight:400;
+            text-align: center;
+            color: $color-purpura-claro;
+            padding: 20px 10px;
+        }
+        &__content {
+            display: flex;
+            justify-items: center;
+        }
+    }
+    a.intro__btn {
+                text-align: center;
+                margin: 0 auto;
+                background: linear-gradient($color-background, $color-lightgreen);
+                border: 2px solid $color-purpura-claro;
+                color: $color-purpura-claro;
+                font-family: $font-links;
+                font-size: 1.2rem;
+                padding: 15px 25px;
+                transition: all .7s;
+                &:hover {
+                    text-align: center;
+                    padding: 15px 50px;
+                    background: linear-gradient($color-lightgreen, $color-background);
+                    border: 2px solid $color-purpura-medio;
+                    color: $color-purpura-medio;
+                    font-family: $font-links;
+                    font-size: 1.2rem;
+                }
+            }
+    .bg {
+        background-color: $color-gris-claro;
+    }
+    .light__description {
+        background-color: $color-gris-claro;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+    .information {
+        max-width: 740px;
+        &__title {
+            font-family: $font-global;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight:700;
+            text-align: center;
+            color: $color-background;
+            padding-bottom: 20px;
+        }
+        &__txt {
+            font: {
+                family: $font-global;
+                size: 1rem;
+                weight:400;
+            }
+            text-align: center;
+            color: $color-lightgreen;
+            line-height: 1.6rem;
+            margin-bottom: 30px;
+        }
+    }
+    .container-all{
+        width: fit-content;
+        height:min-content;
+        margin: 25px;
+        height: auto;
+        background-color: $color-gris-claro;
+      }
+      .container{
+        width: calc(33% - 6px);
+        overflow:hidden;
+        height: fit-content;
+        margin:3px;
+        padding: 0;
+        display:block;
+        position:relative;
+        float:left;
+        background-color: $color-gris-claro;
+      }
+      img{
+        width: 100%;
+        transition-duration: .3s;
+        max-width: 100%;
+        display:block;
+        overflow:hidden;
+        cursor:pointer;
+      }
+      .title{
+        position:absolute;
+        display:block;
+        cursor:pointer;
+        top: 50%;
+        display: none;
+        left: 50%;
+        margin-right: -50%;
+        font-family: $font-global;
+        transform: translate(-50%, -50%);
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-shadow: 1px 5px 10px $color-background;
+        transition-duration: .3s;
+      }
+      .container:hover img{
+        transform: scale(1.2);
+        transition-duration: .3s;
+        filter: grayscale(50%);
+        opacity: .7;
+      }
+      .container:hover span{
+        color:white;
+        display: block;
+        transition-duration: .3s;
+      }
+      @media only screen and (max-width: 900px) {
+          .container {
+              width: calc(50% - 6px);
+          }
+      }
+      @media only screen and (max-width: 400px) {
+          .container {
+              width: 100%;
+          }
+      }
+}
