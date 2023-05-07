@@ -696,6 +696,7 @@ img {
 }
 
 .header__menu ul li {
+  visibility: hidden;
   display: inline-block;
   font-family: "Oswald", sans-serif;
   font-size: 1.1rem;
